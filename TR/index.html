@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tripping in Turkey</title>
+    <body onload="onload()" ng-app="angularApp">
+        <div ng-controller="MainController">
+        <header class="container-fluid">
+          <h1>Trip in Turkey</h1>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <link href="content/app.css" rel="stylesheet"/>
+
+          <script src="app.js" type="application/javascript"></script>
+          
+          <script src="MainController.js" type="application/javascript"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js">
+        </script>
+        </header>
+
+        <nav class="container-fluid">
+            <ul class="nav navbar-inverse navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="https://www.swedishnomad.com/places-to-visit-in-turkey/">Amazing Places</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="row">
+        <aside class="col-sm-3">
+        <h2 class="title">Thing to Do</h2>
+        <ul>
+        <li><a href="https://theculturetrip.com/europe/turkey/articles/the-best-museums-in-turkey/">Museums</a></li>
+        <li><a href="https://theculturetrip.com/europe/turkey/articles/the-10-best-hiking-trails-in-turkey/">Hiking</a></li>
+        <li><a href="https://www.themediterraneantraveller.com/beautiful-beaches-turkey/">Beaches</a></li>
+        </ul>
+        </aside>
+
+        <article>
+
+        <section class="col-sm-6 col-sm-push-3">
+
+            <input id="smallnumber" type="number">
+            <p id="numberMessage"></p>
+            <button onclick="checkNumber()">Submit</button>
+
+            <div class="col-sm-8">
+                <label>FirstName</label><input type="text"/></br>
+                <label>LastName</label><input type="text"/></br>
+                <label>FullName</label><span></span>
+            </div>
+
+            
+        <div class="row"> 
+        <h2>Amazing Museums</h2>
+        <div class="col-sm-3">
+        <img src="images/foto2.jpg"/>
+        </div>
+        <div class="col-sm-9">
+        <p>Palace (Ottoman Turkish: طوپقپو سرايى) is the palace in Istanbul Sarayburnu, which was used as the administrative center of the state for 400 years of the 600-year history of the Ottoman Empire and where the Ottoman sultans lived. Close to 4,000 people once lived in it.</p>
+        <p>The Mevlana Museum is the museum that has been operating since 1926 in the building complex in Konya, which used to be Mevlana's lodge. It is also known as "Mevlana Tomb".
+        </p>
+        <p>Hagia Sophia, formerly St. Sofia Church, a mosque in Istanbul, an old basilica, cathedral, and museum. It is a patriarchal cathedral with a basilica plan built by the Byzantine Emperor Justinian I in the old city center on the historical peninsula of Istanbul between 532-537 and was converted into a mosque by Fatih Sultan Mehmed after the Ottoman conquest of Istanbul in 1453. It was converted into a museum with the Decree of the Council of Ministers published in 1934, excavation and renovation works were initiated and it served as a museum between 1935-2020.</p>
+        <p>Come check them out...the history is waiting for you</p>
+        </div>
+        </article>
+
+        <article>
+        <h2>Hiking trails in Turkey</h2>
+        <div class="col-sm-3">
+        <img src="images/foto3.jpg"/>
+        </div>
+        <div class="col-sm-9">
+        <p>One of Turkey’s most famous hiking trails, the Lycian Trail stretches around 509 km from Fethiye to Antalya with amazing views all around and great stops along the way such as Patara Beach, the natural beaches of Kaş, and the historic ruins of Olympos.</p>
+        <p>Another fantastic Turkish mountain to climb and explore, Kaçkar is located in Turkey’s beautiful Black Sea region whose natural alpine beauty is often compared to Switzerland. Walk past the wildflowers and sheepherders with their flock, and challenge yourself to reach the peak at around 4000m.</p>
+        <p>The Via Egnatia once served as the road that connected the western and eastern parts of the mighty Roman Empire and was used for both trade and military purposes. Nowadays, passionate hikers can traverse the trail that starts in Durres, Albania and goes through Macedonia, Northern Greece and Turkey, with the final stop in Istanbul.</p>
+        </div>
+        </article>
+        
+        <article>
+        <h2>Beautiful beaches in Turkey</h2>
+        <div class="col-sm-3">
+        <img src="images/foto4.jpg"/>
+        </div>
+        <div class="col-sm-9">
+        <p>It’s only right to start with Turkey’s most famous beach, the showstopping Ölüdeniz. Star of tourist brochures around the world. it’s USP is the calm waters of the Blue Lagoon, trapped by a long sandy (and very photogenic) spit or land.</p>
+        <p>Surely the most unique beach in Turkey, gorgeous Butterfly Valley is so-called because of the hundreds of species of butterfly which make their home there every year (including the Jersey Tiger).  </p>
+        <p>Patara is an astounding 11 miles long. If you like your beaches wide, sandy and blissfully free of other people then you’ll find your heaven on Patara.The reason it hasn’t succumbed to development is the presence of protected Loggerhead turtles, who lay their eggs on the beach. There are ruins of the ancient city of Patara scattered around behind the dunes.</p>
+        </div>
+        </article>
+        </div>
+        </section>
+
+        <aside class="col-sm-3 col-sm-pull-6">
+            <h2 class="title">Thing to Do</h2>
+            <ul>
+            <li><a href="https://theculturetrip.com/europe/turkey/articles/the-best-museums-in-turkey/">Museums</a></li>
+            <li><a href="https://theculturetrip.com/europe/turkey/articles/the-10-best-hiking-trails-in-turkey/">Hiking</a></li>
+            <li><a href="https://www.themediterraneantraveller.com/beautiful-beaches-turkey/">Beaches</a></li>
+            </ul>
+        </aside>
+
+        <aside class="col-sm-3">
+        <h2>How to get here?</h2>
+        <ol id="orderedlist">
+            <li>By Plane</li>
+            <li>By Train</li>
+            <li>By Automobile</li>
+            <li>By Boat</li>
+        </ol>
+        </aside>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+        <div class="row">
+              <div class="col-sm-6 col-sm-push-3"></div>
+            <div class="col-sm-6 col-sm-pull-3">
+                <a name="contact">Contact Us</a>
+                <p>Istanbul</p>
+                <p>Bakirköy, 34000</p>
+            </div>
+        </div>
+        </div>
+        <footer class="container-fluid">
+            Copyright 2019 by Burak Pala 
+            
+        </footer>
+
+    </div>
+    </body>
+</head>
+</html>
